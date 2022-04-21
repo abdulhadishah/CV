@@ -1,0 +1,370 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #EEEEEE;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+a:hover {
+    color: #00ADB5;
+}
+
+a:visited{
+    color: #EEEEEE;
+}
+
+/* BG/Body */
+body{
+    background: #00ADB5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* whole Container in Grid left & right */
+.container{
+    position: relative;
+    width: 100%;
+    /* background
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    backround */
+    background: #EEEEEE;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* box-shadow: 0 35px 55px (#2228318f); */
+}
+
+/* left side */
+
+.container .left_side{
+    position: relative;
+    background: #222831;
+    padding: 40px;
+}
+
+/* Profile */
+.profileText{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #808080;
+}
+
+.profileText .imgBx{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
+    overflow: hidden;
+}
+
+.profileText .imgBx img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.profileText h2{
+    color: #EEEEEE;
+    size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profileText h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: #00ADB5;
+}
+
+/* Contact */
+.contactInfo{
+    padding-top: 20px;
+}
+
+.title{
+    color: #EEEEEE;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.contactInfo ul{
+    position: relative;
+}
+
+.contactInfo ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+
+.contactInfo ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #00ADB5;
+}
+
+.contactInfo ul li span{
+    font-weight: 300;
+    /* necessary maybe */
+    display: block;
+    block-size: auto;
+    /* necessary maybe */
+}
+
+/* Education */
+.contactInfo.education li{
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h5{
+    color: #00ADB5;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.contactInfo.education h4{
+    color: #EEEEEE;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contactInfo.education h4:nth-child(2){
+    color: #EEEEEE;
+    font-weight: 500;
+}
+
+.contactInfo.education h4{
+    color: #EEEEEE;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* Language */
+.contactInfo.language .text{
+    color: #EEEEEE;
+    font-weight: 500;   
+}
+
+.contactInfo.language .percent{
+    position: relative;
+    width: 100;
+    height: 6px;
+    background: #000000;
+    display: block;
+    margin-top: 5px;
+}
+
+.contactInfo.language .percent div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00ADB5;
+}
+
+
+/*right side */
+
+.container .right_side{
+    position: relative;
+    background: #393E46;
+    padding: 40px;
+}
+
+/* Experience */
+.about{
+    margin-bottom: 50px;
+}
+
+.about:last-child{
+    margin-bottom: 0px;
+}
+
+.title2{
+    color: #00ADB5;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: #EEEEEE;
+}
+
+.about .box{
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0;
+}
+
+.about .box .year_company{
+    min-width: 150px;
+}
+
+.about .box .year_company h5{
+    text-transform: uppercase;
+    color: #EEEEEE;
+    font-weight: 600;
+    padding-right: 30px;
+}
+
+.about .box .text h4{
+    text-transform: uppercase;
+    color: #00ADB5;
+    font-size: 16px;
+}
+
+/* .hover{
+    color: #00ADB5;
+} */
+
+/* Skills */
+.skills .box{
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .box h4{
+    text-transform: uppercase;
+    color: #EEEEEE;
+    font-weight: 500;
+}
+
+.skills .box .percent{
+    width: 100%;
+    height: 10px;
+    background: #222831;
+}
+
+.skills .box .percent div{
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: #00ADB5;
+}
+
+.intrest ul{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+/* projects */
+.projects h3{
+    color: #00ADB5;
+    padding: 10px 5px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.projects p{
+    padding: 5px;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: 500;
+}
+
+.btn button{
+    cursor: pointer;
+}
+
+button{
+    margin: 10px;
+    font-size: xx-small;
+    font-weight: 500;
+    border: 1px solid #00ADB5;
+    border-radius: 10px;
+}
+
+button:before{
+    color: #00ADB5;
+    background: #EEEEEE;
+    border: 1px solid #00ADB5;
+}
+
+button:after{
+    color: #00ADB5;
+    background: #EEEEEE;
+    border: 1px solid #00ADB5;
+}
+
+.projects button h3:hover{
+    border-radius: 10px;
+    color: #EEEEEE;
+    background: #00ADB5;
+    border: 1px solid #EEEEEE;
+}
+
+/* hobbies */
+.intrest{
+    margin-top: 20px;
+}
+
+.intrest ul li{
+    list-style: none;
+    color: #EEEEEE;
+    font-weight: 500;
+    margin: 10px 10px;
+}
+
+.intrest ul li .fa{
+    color: #00ADB5;
+    font-size: 18px;
+    width: 20px;
+}
+
+/* adj */
+@media (max-width: 1000px)
+{
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .intrest ul{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px)
+{
+    .about .box{
+        flex-direction: column;
+    }
+    .about .box .year_company{
+        margin-bottom: 5px;
+    }
+    .intrest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+/* src: YT/c/OnlineTutorials4Designers */
